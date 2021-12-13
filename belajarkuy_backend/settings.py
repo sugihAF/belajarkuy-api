@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
-from app import init_recommender
 
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'credential.json'
 # os.environ['GOOGLE_CLOUD_PROJECT'] = 'credential.json'
@@ -32,7 +31,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-MODEL = init_recommender()
 # MODEL = None
 
 # Application definition
